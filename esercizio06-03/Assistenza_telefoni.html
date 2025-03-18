@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistenza</title>
+    <link rel="stylesheet" href="static/css/miocss.css">
+    
+</head>
+<body>
+    <form id="form" name="modulo">
+        <fieldset>
+            <legend> Dati cliente</legend>
+            <h4>NOME</h4> <input type="text" name="nome" class="info" tabindex="1" maxlength="20">
+            <h4>COGNOME</h4> <br><input type="text" name="cognome" class="info" tabindex="2" maxlength="20">  
+            <h4>CODICE FISCALE</h4> <input type="text" name="codice_fiscale" class="info"
+            tabindex="3" maxlength="16">  
+            <h4>CITTÁ DI RESIDENZA</h4> <input type="text" name="citta" class="info" tabindex="4" maxlength="30"> 
+            <h4>GESTORE TELEFONICO</h4>
+            <input type="radio" name="operatore" value="tim" id="tim"> TIM 
+            <input type="radio" name="operatore" value="vodafone" id="vodafone"> VODAFONE 
+            <input type="radio" name="operatore" value="windtre" id="windtre"> WINDTRE 
+            <input type="radio" name="operatore" value="windtre" id="fastweb"> FASTWEB 
+            <input type="radio" name="operatore" value="windtre" id="iliad"> ILIAD 
+            <input type="radio" name="operatore" value="altro" id="altro"> Altro
+            <input type="text" name="altroOperatore" id="altroOperatore" disabled>
+
+            <h4>NUMERO DI TELEFONO</h4><input type="tel" name="telefono" class="info" tabindex="6"> 
+            <h4>MARCA</h4>
+            <select name="marca" class="info" id="marca">
+                <option value="" disabled selected>Seleziona una marca</option>
+                <option value="samsung">SAMSUNG</option>
+                <option value="apple">APPLE</option>
+                <option value="xiaomi">XIAOMI</option>
+                <option value="huawei">HUAWEI</option>
+                <option value="lg">LG</option>
+                <option value="oppo">OPPO</option>
+            </select>
+            <h4>MODELLO</h4> <input type="text" name="modello" class="info" tabindex="8"> <br>
+            <h4>DESCRIZIONE PROBLEMA</h4> <textarea name="problema" class="info" tabindex="9"></textarea> <br>
+            <h4>RECAPITO DI CONTATTO</h4> <input type="tel" name="recapito" class="info" tabindex="10">
+            <input type="button" name="button" id="submit" value="Invia">
+           
+        </fieldset>
+    </form>
+
+    <div id="risultato" style="display:none;">
+        <form id="form2" name="modulo2"><h3>Ricevuta</h3><br>
+            <h4>NOME</h4><input type="text" name="uno" class="risultato" readonly >
+            <h4>COGNOME</h4><input type="text" name="due" class="risultato" readonly>
+            <h4>CODICE FISCALE</h4><input type="text" name="tre" class="risultato" readonly>
+            <h4>CITTÁ DI RESIDENZA</h4><input type="text" name="quattro" class="risultato" readonly>
+            <h4>GESTORE TELEFONICO</h4><input type="text" name="cinque" class="risultato" readonly>
+            <h4>NUMERO DI TELEFONO</h4><input type="text" name="sei" class="risultato" readonly>
+            <h4>MARCA</h4><input type="text" name="sette" class="risultato" readonly>
+            <h4>MODELLO</h4><input type="text" name="otto" class="risultato" readonly>
+            <h4>DESCRIZIONE PROBLEMA</h4><input type="text" name="nove" class="risultato" readonly>
+            <h4>RECAPITO DI CONTATTO</h4><input type="text" name="dieci" class="risultato" readonly>
+            <input type="reset" name="button" id="reset" value="reset" hidden>
+        </form>
+    </div>
+    <script src="static/js/assistenza.js"></script>
+</html>
+</body>

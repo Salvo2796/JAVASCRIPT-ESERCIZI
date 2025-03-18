@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo di Acquisto Smartphone</title>
+    <link rel="stylesheet" href="static/css/miocss.css">
+</head>
+<body>
+
+    <div id="modulo">
+        <h2>Modulo di Acquisto Smartphone</h2>
+        <form id="form">
+            <span>Nome:</span> 
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <span>Cognome:</span>
+            <input type="text" id="cognome" name="cognome" ><br><br>
+
+            <span>Scegli il modello di smartphone:</span> 
+            <select id="smartphone" name="smartphone">
+                <option value="" selected disabled>Seleziona...</option>
+                <option value="iphone">Apple iPhone 13</option>
+                <option value="motorola">Motorola moto g55</option>
+                <option value="honor">Honor Magic6 Lite</option>
+                <option value="oneplus">OnePlus 13R</option>
+                <option value="samsung">Samsung Galaxy A35</option>
+                <option value="realmi">realme Note 60</option>
+            </select><br><br>
+
+            <button type="button" id="invia">Invia</button>
+        </form>
+    </div>
+
+    <div id="ricevuta" hidden>
+        <h3>Ricevuta</h3>
+        <p><strong>Nome:</strong> <span id="nomeRicevuta"></span></p>
+        <p><strong>Cognome:</strong> <span id="cognomeRicevuta"></span></p>
+        <p><strong>Modello Smartphone:</strong> <span id="smartphoneRicevuta"></span></p>
+        <p><strong>Immagine:</strong></p>
+        <p id="imgRicevuta"></p>
+        <p><strong>Specifiche Tecniche:</strong> <span id="specifiche"></span></p>
+        <button type="button" id="reset">Torna indietro</button>
+    </div>
+
+    <script src="static/js/modulo.js"></script>
+
+</body>
+</html>

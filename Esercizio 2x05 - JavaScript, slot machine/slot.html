@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SLOT MACHINE</title>
+		<link rel="stylesheet" href="static/css/miocss.css">
+		
+	</head>
+
+	<body>
+		<div id="border">
+			<div class="contenitore">
+				<div class="slotmachine" id="uno"><img src="static/images/1.png"></div>
+				<div class="slotmachine" id="due"><img src="static/images/1.png"></div>
+				<div class="slotmachine" id="tre"><img src="static/images/1.png"></div>
+			</div>
+			<div class="pulsantiera">
+				<button class="pulsantegioca">GIOCA</button>
+			</div>
+			<div class="pulsantiera">
+				<button class="pulsantestop" disabled>STOP</button>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="esito"><!-- Visualizzare qui l'esito della partita --></div>
+		</div>
+		<div id="statistiche">
+			Tentativi effettuati: <span id="tentativi">0</span> <br>
+			Vittorie: <span id="vittorie">0</span> <br>
+			Percentuale di vittorie: <span id="percentuale">0%</span>
+		</div>
+
+		<script src="static/js/slot.js"></script>
+		
+	</body>
+</html>

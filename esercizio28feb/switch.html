@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = Number(prompt("giorno della settimana"))
+        document.write("<table border='1'>");
+        document.write("<tr><th>numero</th><th>giorno</th></tr>");
+        let giorno;
+        
+
+        switch (numero) {
+            case 1:
+                giorno="lunedi"
+                break; 
+            case 2:
+                giorno="martedi"
+                break; 
+            case 3:
+                giorno="mercoledi" 
+                break;
+            case 4:
+                giorno="giovedi" 
+                break;
+            case 5:
+                giorno="venerdi"
+                break; 
+            case 6:
+                giorno="sabato" 
+                break;
+            case 7:
+                giorno="domenica" 
+                
+                break;
+        
+            default:
+                break;
+
+            
+        }
+       
+        document.write("<tr>");
+        document.write("<td>" + numero + "</td>");
+        document.write("<td>" + giorno + "</td>");
+        document.write("</tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>

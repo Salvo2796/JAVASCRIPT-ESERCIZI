@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#modulo, #ricevuta {
+    padding: 20px;
+    margin: 20px auto;
+    width: 500px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0db19e;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.immagine {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+#reset {
+    background-color: #f44336;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+}
